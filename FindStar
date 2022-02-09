@@ -35,56 +35,21 @@ driver.findElement(By.xpath("//*[@id="js-pjax-container"]/div/div[3]/div/ul/li/d
 int star_size = driver.findElements(By.xpath("//*[@id="repository-container-header"]/div[1]/ul/li[3]/div/form[2]/button/svg")).size();
 
 
-        // Custom Input as String 1
+        //api result
       int numfromAPI = "from api;
  
 
  
-      
-        // let us set a boolean flag and
-    
-        boolean res = m.find();
+      //numbers to compare
  
-        // Output will be based on boolean flag
  
-        // If special characters are found
-        if (res)
- 
-            // Display this message on the console
-            System.out.println(
-                "String1 contains Special Characters");
- 
-        // If we reach here means no special characters are
-        // found
-        else
- 
-            // Display this message on the console
-            System.out.println(
-                "No Special Characters found in String 1");
- 
-        // Custom Input as String 2
-        String s2 = "!!Geeks.For.Geeks##";
- 
-        // Creating matcher for above pattern on our string
-        // by creating object of matcher class
-        Matcher m2 = p.matcher(s2);
- 
-        // Finding the matches using find() method
-        boolean res2 = m2.find();
- 
-        // If matches boolean returns true
-        if (res2)
- 
-            // Then print and display thta special
-            // characters are found
-            System.out.println(
-                "String 2 contains Special Characters");
- 
-        // If not
-        else
- 
-            // Then Display the print statement below
-            System.out.println(
-                "No Special Characters found in String 2");
-    }
+ if(star_size > numfromAPI){
+ System.out.println(num1 + " is greater than " + num2);
+ }
+ else if(star_size < numfromAPI){
+ System.out.println(num1 + " is less than " + num2);
+ }
+ else{
+ System.out.println(num1 + " is equal to " + num2);
+ }
 }
