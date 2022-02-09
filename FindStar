@@ -1,6 +1,6 @@
 
-// Java Program to Check Whether String contains Special
-// Characters using Regex classes
+// Java Program to Check Whether number of stars are equl
+
  
 // Importing regex classes from java.util package to
 // match a specific pattern
@@ -36,11 +36,9 @@ int star_size = driver.findElements(By.xpath("//*[@id="repository-container-head
 
 
         // Custom Input as String 1
-        String s1 = "from api;
+      int numfromAPI = "from api;
  
-        
-        // Creating matcher for above pattern on our string
-        Matcher m = p.matcher(s1);
+
  
       
         // let us set a boolean flag and
