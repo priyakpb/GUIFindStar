@@ -44,12 +44,12 @@ int star_size = driver.findElements(By.xpath("//*[@id="repository-container-head
  
  
  if(star_size > numfromAPI){
- System.out.println(num1 + " is greater than " + num2);
+ System.out.println(star_size + " is greater than " + numfromAPI);
  }
  else if(star_size < numfromAPI){
- System.out.println(num1 + " is less than " + num2);
+ System.out.println(star_size + " is less than " + numfromAPI);
  }
  else{
- System.out.println(num1 + " is equal to " + num2);
+ System.out.println(star_size + " is equal to " + numfromAPI);
  }
 }
