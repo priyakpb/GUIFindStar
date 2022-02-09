@@ -36,17 +36,25 @@ int star_size = driver.findElements(By.xpath("//*[@id="repository-container-head
 
 
         //api result
-      int numfromAPI = "from api;
- 
+      String numfromAPI = "from api;
+  String str = numfromAPI.replaceAll("[^\\d]", " ");
+  
+        // Remove extra spaces from the beginning
+        // and the ending of the string
+        str = str.trim();
+  
+        // Replace all the consecutive white
+        // spaces with a single space
+        str = str.replaceAll(" +", " ");
 
  
       //numbers to compare
  
  
- if(star_size > numfromAPI){
+ if(star_size > İnteger.parseİnt(str)){
  System.out.println(star_size + " is greater than " + numfromAPI);
  }
- else if(star_size < numfromAPI){
+ else if(star_size < İnteger.parseİnt(str)){
  System.out.println(star_size + " is less than " + numfromAPI);
  }
  else{
