@@ -32,7 +32,7 @@ driver.findElement(By.xpath("//*[@id="js-pjax-container"]/div/div[3]/div/ul/li/d
 
 //Get the number of starts
 
-int star_size = driver.findElements(By.xpath("//*[@id="repository-container-header"]/div[1]/ul/li[3]/div/form[2]/button/svg")).size();
+String star_size = driver.findElement(By.xpath("//*[@id="repo-stars-counter-star"]")).getText();
 
 
         //api result
@@ -51,13 +51,8 @@ int star_size = driver.findElements(By.xpath("//*[@id="repository-container-head
       //numbers to compare
  
  
- if(star_size > İnteger.parseİnt(str)){
- System.out.println(star_size + " is greater than " + numfromAPI);
- }
- else if(star_size < İnteger.parseİnt(str)){
- System.out.println(star_size + " is less than " + numfromAPI);
- }
- else{
- System.out.println(star_size + " is equal to " + numfromAPI);
+ if(str.contains(star_size)){
+ 
+ System.out.println("star_size validation is successful");
  }
 }
